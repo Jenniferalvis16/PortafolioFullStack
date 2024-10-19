@@ -1,0 +1,156 @@
+<html data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/img/cc-removebg-preview.png" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>J<span>P</span></h2>
+          </div>
+
+          <ul class="menu" id="menu">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contactame">Contacto</a></li>
+          </ul>
+        
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="info-content">
+          <span class="info_content_subtitle"> Desarrollador Full-Satck Java Trainer</span>
+          <h1>
+            <span class="typed-text">Soy <span class="info-conten myname">Jennifer</span></span>
+          </h1>
+          <p class="info_content_p">
+            ¡Hola! Soy Jenifer Pimentel, soy Analista QA Trainer y desde mayo estoy estudiando Full-Stack Java. Mi
+            objetivo es crear experiencias web cautivadoras y funcionales.
+            ¡Explora mi trabajo y descubre el mundo de la programación a través
+            de mis ojos!
+          </p>
+          <a download href="./cv/jenniferpimentel.pdf">
+            <button class="mybutton">Descargar CV</button>
+          </a>
+        </div>
+        <img src="./img/fotoprincipal.jpeg" alt="" />
+      </main>
+    </div>
+
+    <div class="about-info" id="sobre">
+      <h2>Sobre mí</h2>
+      <div class="divider"></div>
+      <p>En mi día a día, encuentro inspiración en la diversidad que nos rodea.
+        Fuera de las líneas de código, disfruto explorando nuevas formas de
+        expresión creativa.</p>
+      <p>Siempre en busca de experiencias auténticas, me gusta descubrir cómo
+        la tecnología puede mejorar y enriquecer nuestras vidas. Bienvenido a
+        mi espacio digital, donde la creatividad se encuentra con la
+        simplicidad.</p>
+    </div>
+
+    <div class="portfolio text-center py-5" id="portafolio">
+      <h2>Portafolio</h2>
+      
+      <div class="button-content">
+        <button class="project-details-button download-cv">
+          <a href="https://tienda-virtual-sand.vercel.app/productos.html" target="_blank" class="btn btn-primary">Ver proyecto realizado</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="tools text-center py-5">
+      <h2>Herramientas que utilizo</h2>
+      <div class="tool d-inline-block" onclick="showReference('HTML')">
+        <img src="./img/HTML.png" alt="HTML" class="img-fluid" />
+        <p>Html</p>
+      </div>
+      <div class="tool d-inline-block" onclick="showReference('CSS')">
+        <img src="./img/CSS.jpeg" alt="CSS" class="img-fluid" />
+        <p>Css</p>
+      </div>
+      <div class="tool d-inline-block" onclick="showReference('JavaScript')">
+        <img src="./img/javascript.png" alt="JavaScript" class="img-fluid" />
+        <p>JavaScript</p>
+      </div>
+      <div class="tool d-inline-block" onclick="showReference('Bootstrap')">
+        <img src="./img/bootstrap.jpeg" alt="Bootstrap" class="img-fluid" />
+        <p>Bootstrap</p>
+      </div>
+      <div class="tool d-inline-block" onclick="showReference('Java')">
+        <img src="./img/java.png" alt="Java" class="img-fluid" />
+        <p>Java</p>
+      </div>
+      <div class="tool d-inline-block" onclick="showReference('Docker')">
+        <img src="./img/DOCKER.png" alt="Docker" class="img-fluid" />
+        <p>Docker</p>
+      </div>
+      <div class="tool d-inline-block" onclick="showReference('GitHub')">
+        <img src="./img/GITHUB.jpeg" alt="GitHub" class="img-fluid" />
+        <p>GitHub</p>
+      </div>
+      <div class="tool d-inline-block" onclick="showReference('Notion')">
+        <img src="./img/notion.png" alt="Notion" class="img-fluid" />
+        <p>Notion</p>
+      </div>
+    </div>
+
+   <div id="referenceModal" class="modal">
+  <span class="close" onclick="closeReference()">&times;</span>
+  <p id="referenceText"></p>
+</div>
+
+
+    <div class="contact-section" id="contactame">
+      <div class="contact-heading">
+        <h2>Contactame</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="container-contact">
+        <div class="contact-form">
+          <h4>Enviar un mensaje...</h4>
+          <form action="https://formsubmit.co/jjpa8a@gmail.com" method="POST" class="form-group">
+            <input type="text" name="text" placeholder="Nombre" class="input" />
+            <input type="email" name="Email" placeholder="Email" class="input" />
+            <textarea name="message" placeholder="Enviar un mensaje aqui..."></textarea>
+            <button type="submit" class="btn-submit mybutton">Enviar</button>
+            <input type="hidden" name="_next" value="https://tienda-virtual-sand.vercel.app/productos.html">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2 id="contacto">Jennifer Pimentel</h2>
+        <h5>Desarrollador Full-Stack Java</h5>
+      </div>
+      <div class="sotial-networks">
+        <a href="https://www.linkedin.com/in/jennifer-pimentel-qa/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/jenniferalvis16" target="_blank"><i class="fab fa-github fa-2x"></i>
+      </div>
+      <h4 class="correo">Correo: jjpa8a@gmail.com</h4>
+      <h5 class="correo">Telefono: 624742767</h5>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
